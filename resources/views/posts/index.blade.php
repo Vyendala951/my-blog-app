@@ -10,7 +10,7 @@
 
   <table class="table table-striped table-bordered">
     <thead class="table-dark">
-      <tr><th>#</th><th>Title</th><th>Content</th><th>Created</th><th>Active?</th><th>Actions</th></tr>
+      <tr><th>#</th><th>Title</th><th>Content</th><th>Created</th><th>Updated at</th><th>Active?</th><th>Actions</th></tr>
     </thead>
     <tbody>
     @foreach($posts as $i => $post)
@@ -19,6 +19,7 @@
         <td>{{ $post->title }}</td>
         <td>{{ Str::limit($post->content, 70) }}</td>
         <td>{{ $post->created_at->format('d M Y') }}</td>
+        <td>{{ $post->updated_at->format('d M Y') }}</td>
         <td>{{ $post->is_active }}</td>
         <td>
           <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-sm btn-warning">Edit</a>
