@@ -17,7 +17,7 @@
       <tr>
         <td>{{ $i+1 }}</td>
         <td>{{ $post->title }}</td>
-        <td>{{ Str::limit($post->content, 70) }}</td>
+        <td>{{ Str::limit($post->content, 50) }}</td>
         <td>{{ $post->created_at->format('d M Y') }}</td>
         <td>{{ $post->updated_at->format('d M Y') }}</td>
         <td>{{ $post->is_active }}</td>
