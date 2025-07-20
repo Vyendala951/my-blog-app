@@ -1,6 +1,6 @@
 # GitHub Repository
 
-https://github.com/your-username/blog-crud-laravel12
+https://github.com/Vyendala951/my-blog-app
 
 ---
 
